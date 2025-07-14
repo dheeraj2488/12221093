@@ -7,7 +7,7 @@ import {
   Container,
   Box,
 } from "@mui/material";
-
+import { useNavigate } from "react-router-dom";
 
 function App() {
   const [urls, setUrls] = useState([
@@ -15,7 +15,7 @@ function App() {
   ]);
   const [results, setResults] = useState([]);
   const [error, setError] = useState("");
-
+    const navigate = useNavigate();
   const handleChange = (index, field, value) => {
     const updated = [...urls];
     updated[index][field] = value;
@@ -67,7 +67,13 @@ function App() {
   return (
     <Container maxWidth="md" className="container">
       <Typography variant="h4" align="center" gutterBottom>
-        Simple URL Shortener
+        Simple URL Shortener  <br />
+        click here to see <span
+          onClick={() => navigate('/urls')}
+          style={{ color: 'blue', textDecoration: 'underline', cursor: 'pointer' }}
+        >
+          Shortened Urls
+        </span>
       </Typography>
 
       {urls.map((entry, index) => (
