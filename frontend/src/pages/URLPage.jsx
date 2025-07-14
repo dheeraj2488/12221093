@@ -5,7 +5,6 @@ import {
   Container,
   Typography,
   Paper,
-  CircularProgress,
 } from "@mui/material";
 
 const URLPage = () => {
