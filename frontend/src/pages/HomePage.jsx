@@ -27,7 +27,7 @@ const HomePage = () => {
           onClick={() => navigate('/urls')}
           style={{ color: 'blue', textDecoration: 'underline', cursor: 'pointer' }}
         >
-          Shorten Url
+          Shortened Url
         </span>
       </h2>
     </div>

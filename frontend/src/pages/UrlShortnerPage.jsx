@@ -7,7 +7,7 @@ import {
   Container,
   Box,
 } from "@mui/material";
-import URLPage from "./URLPage";
+
 
 function App() {
   const [urls, setUrls] = useState([

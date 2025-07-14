@@ -13,7 +13,7 @@ const URLPage = () => {
   const fetchStats = async () => {
     try {
       const res = await axios.get("http://localhost:5050/urls");
-        console.log("Fetched URLs:", res.data);
+        // console.log("Fetched URLs:", res.data);
       setUrls(res.data);
     } catch (err) {
       console.error("Failed to load statistics:", err);
